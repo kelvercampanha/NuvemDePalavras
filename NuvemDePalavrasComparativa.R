@@ -1,4 +1,4 @@
-#Limpando a memória do R
+#Limpando a memÃ³ria do R
 rm(list=ls(all=T))
 
 # Packages
@@ -11,11 +11,11 @@ library(wordcloud)
 #Comparison Cloud
 
 #Dados
-dataset=read.xlsx("C:/Users/KLC/Desktop/Repositório/Text mining, word clouds and comparison clouds/data.xlsx",1,encoding = "UTF-8")
+dataset=read.xlsx("C:/Users/User/Desktop/RepositÃ³rio/Text mining, word clouds and comparison clouds/data.xlsx",1,encoding = "UTF-8")
 
-Neutro <- as.vector(dataset[dataset$Sentimento == "Neutro","Comentário"])
-Negativo <- as.vector(dataset[dataset$Sentimento == "Negativo","Comentário"])
-Positivo <- as.vector(dataset[dataset$Sentimento == "Positivo","Comentário"])
+Neutro <- as.vector(dataset[dataset$Sentimento == "Neutro","ComentÃ¡rio"])
+Negativo <- as.vector(dataset[dataset$Sentimento == "Negativo","ComentÃ¡rio"])
+Positivo <- as.vector(dataset[dataset$Sentimento == "Positivo","ComentÃ¡rio"])
 
 ## Building the list for the corpus
 wordALL <- list(Neutro, Negativo,Positivo)
