@@ -1,4 +1,4 @@
-#Limpando a memória do R
+#Limpando a memÃ³ria do R
 rm(list=ls(all=T))
 
 # Packages
@@ -11,9 +11,9 @@ library(wordcloud)
 #Nuvem de Palavras Simples
 
 #Dados
-dataset=read.xlsx("C:/Users/KLC/Desktop/Repositório/Text mining, word clouds and comparison clouds/data.xlsx",1,encoding = "UTF-8")
+dataset=read.xlsx("C:/Users/User/Desktop/RepositÃ³rio/Text mining, word clouds and comparison clouds/data.xlsx",1,encoding = "UTF-8")
 
-data <- data.frame(text = dataset$Comentário)
+data <- data.frame(text = dataset$ComentÃ¡rio)
 text <- paste(data$text, collapse = " ")
 text <- toupper(text)
 
